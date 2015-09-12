@@ -1,2 +1,4 @@
 node_modules/
-/dist/vendor/
+dist/vendor/
+.idea/
+.git/
