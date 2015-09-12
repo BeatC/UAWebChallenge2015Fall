@@ -1,0 +1,13 @@
+{
+  "name": "uawebchallenge2015fall",
+  "version": "1.0.0",
+  "description": "Task for the all-Ukrainian contest UA Web Challenge 2015 (Fall) in the nomination Frontend Developer (HTML+CSS) Junior category",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.1"
+  }
+}
