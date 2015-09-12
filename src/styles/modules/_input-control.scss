@@ -1,0 +1,14 @@
+// Input control module styles BEGIN
+
+.input-control {
+  width: 100%;
+  margin: em(10, 14) 0;
+  padding: em(10, 14) em(14, 14);
+  font-size: em(14);
+  font-weight: 400;
+  color: $inputColor;
+  border: 1px solid $inputBorderColor;
+  @include border-radius(em(5, 14));
+}
+
+// Input control module styles END

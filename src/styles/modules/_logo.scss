@@ -1,0 +1,13 @@
+// Logo module styles BEGIN
+
+.logo {
+  @extend .mobile-block;
+
+  span {
+    color: $logoColor;
+    font-size: em(17);
+    font-weight: 700;
+  }
+}
+
+// Logo module styles END

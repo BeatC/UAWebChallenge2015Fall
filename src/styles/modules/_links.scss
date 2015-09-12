@@ -1,0 +1,31 @@
+// Links module styles BEGIN
+
+.links {
+
+  @extend .mobile-block;
+
+  h4.title {
+    margin-bottom: 3px;
+    color: $titleTextColor;
+    font-size: em(14);
+    font-weight: 700;
+  }
+  
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: em(13);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  a {
+    color: $descriptionColor;
+    font-size: em(14);
+    font-weight: 100;
+  }
+}
+
+// Links module styles END

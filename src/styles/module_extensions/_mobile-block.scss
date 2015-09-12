@@ -1,0 +1,13 @@
+// Mobile block module extensions styles BEGIN
+
+.mobile-block {
+  @media screen and (max-width: 320px) {
+    @include span-columns(12);
+    @include clearfix;
+    @include omega;
+
+    text-align: center;
+  }
+}
+
+// Mobile block module extensions styles END

@@ -1,0 +1,9 @@
+// Mixins definition BEGIN
+
+@mixin border-radius($x) {
+  -webkit-border-radius: $x;
+  -moz-border-radius: $x;
+  border-radius: $x;
+}
+
+// Mixins definition END

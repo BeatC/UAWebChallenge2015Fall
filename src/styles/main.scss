@@ -1,0 +1,23 @@
+// Main imports BEGIN
+@import "../vendor/normalize-css/normalize.css";
+@import "../vendor/bourbon/app/assets/stylesheets/bourbon";
+@import "../vendor/neat/app/assets/stylesheets/neat";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "base";
+
+// Main imports END
+
+// Module imports BEGIN
+
+@import "module_extensions/main";
+@import "modules/main";
+
+// Module imports END
+
+// Layout imports BEGIN
+
+@import "layouts/main";
+
+// Layout imports END

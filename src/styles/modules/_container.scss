@@ -1,0 +1,8 @@
+// Container module styles definition BEGIN
+
+.container {
+  @include outer-container();
+  margin: 0 auto;
+}
+
+// Container module styles definition END

@@ -1,0 +1,11 @@
+// Dark button module styles BEGIN
+
+.btn-dark {
+  @extend .btn-control;
+
+  color: $btnDarkColor;
+  background-color: $btnDarkBgColor;
+  border: em(2, 14) solid $btnDarkBgColor;
+}
+
+// Dark button module styles END

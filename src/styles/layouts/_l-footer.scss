@@ -1,0 +1,16 @@
+// Layout styles for l-footer section BEGIN
+
+.l-footer {
+  border-top: em(4) solid $logoColor;
+  padding: em(16) 0;
+
+  .links {
+    margin: em(11) 0 em(2);
+  }
+
+  .design {
+    margin-top: em(9);
+  }
+}
+
+// Layout styles for l-footer section END

@@ -1,0 +1,16 @@
+// Btn control styles BEGIN
+
+.btn-control {
+  @include border-radius(em(25, 14));
+
+  padding: em(10, 14) 0;
+  font-size: em(14);
+  font-weight: 700;
+  text-align: center;
+
+  @media screen and (max-width: 320px) {
+    width: 100%;
+  }
+}
+
+// Btn control styles END

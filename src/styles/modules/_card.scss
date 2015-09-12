@@ -1,0 +1,22 @@
+// Card module styles BEGIN
+
+.card {
+  @media screen and (max-width: 320px) {
+    display: block;
+    width: 100%;
+  }
+  background: red;
+  padding: em(48) 0;
+  margin: em(10) 0;
+  vertical-align: top;
+  @include border-radius(em(5));
+
+  .title {
+    color: $cardColor;
+    font-size: em(21);
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+// Card module styles END

@@ -1,0 +1,14 @@
+// Design module styles BEGIN
+
+.design {
+  @extend .mobile-block;
+
+  h4.title {
+    color: $copyrightsColor;
+    font-size: em(10);
+    text-transform: uppercase;
+    letter-spacing: em(1, 10);
+  }
+}
+
+// Design module styles END

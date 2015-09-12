@@ -13,17 +13,17 @@ var connect = require('gulp-connect');
 // Paths definition BEGIN
 
 var paths = {
-    markup: "src/markup/",
-    styles: "src/styles/",
-    scripts: "src/scripts/",
-    images: "src/images/"
+    markup: 'src/markup/**/*',
+    styles: 'src/styles/**/*',
+    scripts: 'src/scripts/**/*',
+    images: 'src/images/**/*'
 };
 
 // Paths definition END
 
 // Jade files compilation and server reloading task
 gulp.task('jade', function () {
-    gulp.src(paths.markup  + '**/*')
+    gulp.src(paths.markup)
         .pipe(jade({
             locals: {}
         }))
@@ -33,7 +33,7 @@ gulp.task('jade', function () {
 
 // SCSS files compilation, sourcemaps generation and server reloading task
 gulp.task('sass', function () {
-    gulp.src(paths.styles + '**/*')
+    gulp.src(paths.styles)
         .pipe(sourcemaps.init())
             .pipe(sass({
                 outputStyle: 'compressed'
@@ -46,7 +46,7 @@ gulp.task('sass', function () {
 
 // JS uglifying, sourcemaps generation and server reloading task
 gulp.task('js', function () {
-    gulp.src(paths.scripts + '**/*')
+    gulp.src(paths.scripts)
         .pipe(sourcemaps.init())
             .pipe(uglify())
         .pipe(sourcemaps.write('maps'))
@@ -82,7 +82,7 @@ gulp.task('watch', function () {
 });
 
 // Default development set of tasks
-gulp.task('dev', ['server', 'jade', 'sass', 'js', 'spritesheet', 'lint']);
+gulp.task('dev', ['server', 'jade', 'sass', 'js', 'spritesheet', 'lint', 'watch']);
 
 // Default set of tasks
 gulp.task('default', ['server']);
