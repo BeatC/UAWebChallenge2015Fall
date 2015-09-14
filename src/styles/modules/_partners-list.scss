@@ -1,0 +1,40 @@
+// Partners list module styles BEGIN
+
+.partners-list {
+  .partner {
+    margin-bottom: em(25);
+    
+    .name {
+      margin-bottom: em(12, 14);
+      color: $titleTextColor;
+      font-size: em(14);
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      margin-top: em(12, 14);
+      color: $descriptionColor;
+      font-size: em(14);
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+
+  .partner-img {
+    margin-bottom: em(20);
+  }
+
+
+  img {
+    @include border-radius(em(60));
+    display: block;
+    margin: 0 auto;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+// Partners list module styles END

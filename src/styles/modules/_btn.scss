@@ -1,0 +1,10 @@
+// Btn module styles BEGIN
+
+.btn {
+  @extend .btn-control;
+  border-color: $btnColor;
+  color: $btnColor;
+  background-color: $btnBgColor;
+}
+
+// Btn module styles END

@@ -1,0 +1,13 @@
+// Logo light module styles BEGIN
+
+.logo-light {
+  @media screen and (max-width: 320px) {
+    text-align: center;
+  }
+
+  color: #fff;
+  font-size: em(20);
+  font-weight: 700;
+}
+
+// Logo light module styles END

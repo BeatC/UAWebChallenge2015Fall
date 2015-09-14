@@ -1,0 +1,21 @@
+// Layout styles for l-header BEGIN
+
+.l-header {
+  background: url(../img/logo.jpg) #c49c70;
+  @include background-size(cover);
+  padding: em(20) em(20) em(135);
+
+  .logo-light {
+    margin-top: em(100);
+  }
+
+  .tagline {
+    margin-top: em(35);
+  }
+  
+  .tagline-description {
+    margin: em(20) auto;
+  }
+}
+
+// Layout styles for l-header END

@@ -5,7 +5,7 @@
     display: block;
     width: 100%;
   }
-  background: red;
+
   padding: em(48) 0;
   margin: em(10) 0;
   vertical-align: top;
@@ -16,6 +16,34 @@
     font-size: em(21);
     font-weight: 700;
     text-align: center;
+  }
+
+  &.idea-sport {
+    background: url('../img/ideas_0.jpg') 0 -36px no-repeat;
+  }
+
+  &.idea-health {
+    background: url('../img/ideas_1.jpg') 0 -135px no-repeat;
+  }
+
+  &.idea-expeditions {
+    background: url('../img/ideas_2.jpg') 0 -67px no-repeat;
+  }
+
+  &.idea-games {
+    background: url('../img/ideas_3.jpg') 0 -114px no-repeat;
+  }
+
+  &.idea-culture {
+    background: url('../img/ideas_4.jpg') -122px -155px no-repeat;
+  }
+
+  &.idea-relaxation {
+    background: url('../img/ideas_5.jpg') -190px -5px no-repeat;
+  }
+
+  &.idea-travelling {
+    background: url('../img/ideas_6.jpg') 0 -50px no-repeat;
   }
 }
 

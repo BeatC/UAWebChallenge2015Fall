@@ -1,0 +1,47 @@
+// Step list styles module BEGIN
+
+.step-list {
+  > li {
+    @include border-radius(em(5));
+
+    margin: em(10) 0;
+    padding: em(70) em(20) em(18);
+    
+    &.step-one {
+      background: url("../img/step_0.jpg") #847b70 no-repeat;
+    }
+
+    &.step-two {
+      background: url("../img/step_1.jpg") #847b70 no-repeat;
+    }
+
+    &.step-three {
+      background: url("../img/step_2.jpg") #847b70 no-repeat;
+    }
+  }
+
+  .sub-step-list {
+    li {
+      display: none;
+
+      &.is-active {
+        display: block;
+      }
+    }
+  }
+  
+  .step-title {
+    margin: em(20, 24) 0;
+    color: $stepTitleColor;
+    font-size: em(24);
+    font-weight: 700;
+  }
+  
+  .step-description {
+    color: $stepDescriptionColor;
+    font-size: em(14);
+    font-weight: 100;
+  }
+}
+
+// Step list module styles END
