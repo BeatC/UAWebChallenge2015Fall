@@ -6,6 +6,11 @@
   color: $btnDarkColor;
   background-color: $btnDarkBgColor;
   border: em(2, 14) solid $btnDarkBgColor;
+
+  &:hover, &:active {
+    background-color: shade($btnDarkBgColor, 10%);
+    border-color: shade($btnDarkBgColor, 10%);
+  }
 }
 
 // Dark button module styles END

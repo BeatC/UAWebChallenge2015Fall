@@ -1,0 +1,25 @@
+// Search module styles BEGIN
+
+.search {
+  @include shift(2);
+  @include span-columns(8);
+  @include clearfix;
+
+  @media screen and (min-width: $mobileWidth + 1) {
+    .btn-dark  {
+      vertical-align: top;
+      @include span-columns(4);
+      @include omega;
+
+      margin-top: em(8, 14)
+    }
+
+    .input-control  {
+      vertical-align: top;
+      @include  span-columns(8);
+    }
+  }
+
+}
+
+// Search module styles END

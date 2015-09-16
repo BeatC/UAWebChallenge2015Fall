@@ -4,8 +4,13 @@ h3.title {
   margin-bottom: em(15, 22);
   color: $titleTextColor;
   font-size: em(22);
+  font-family: $baseFont;
   text-align: center;
-  letter-spacing: 0.7px;
+  letter-spacing: 0px;
+
+  @media screen and (min-width: $mobileWidth + 1) {
+    margin-bottom: em(24, 22);
+  }
 }
 
 // Title module styles definiton BEGIN

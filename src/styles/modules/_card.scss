@@ -1,50 +1,68 @@
 // Card module styles BEGIN
 
 .card {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: $mobileWidth) {
     display: block;
     width: 100%;
   }
 
+  height: em(310);
   padding: em(48) 0;
   margin: em(10) 0;
   vertical-align: top;
+  -webkit-background-size: cover;
+  background-size: cover;
   @include border-radius(em(5));
 
   .title {
     color: $cardColor;
+    font-family: $baseFont;
     font-size: em(21);
     font-weight: 700;
     text-align: center;
   }
 
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
   &.idea-sport {
-    background: url('../img/ideas_0.jpg') 0 -36px no-repeat;
+    background-image: url('../img/ideas_0.jpg');
   }
 
   &.idea-health {
-    background: url('../img/ideas_1.jpg') 0 -135px no-repeat;
+    background-image: url('../img/ideas_1.jpg');
   }
 
   &.idea-expeditions {
-    background: url('../img/ideas_2.jpg') 0 -67px no-repeat;
+    background-image: url('../img/ideas_2.jpg');
   }
 
   &.idea-games {
-    background: url('../img/ideas_3.jpg') 0 -114px no-repeat;
+    background-image: url('../img/ideas_3.jpg');
   }
 
   &.idea-culture {
-    background: url('../img/ideas_4.jpg') -122px -155px no-repeat;
+    background-image: url('../img/ideas_4.jpg');
   }
 
   &.idea-relaxation {
-    background: url('../img/ideas_5.jpg') -190px -5px no-repeat;
+    background-image: url('../img/ideas_5.jpg');
   }
 
   &.idea-travelling {
-    background: url('../img/ideas_6.jpg') 0 -50px no-repeat;
+    background-image: url('../img/ideas_6.jpg');
   }
+
+  @media screen and (min-width: $mobileWidth + 1) {
+    &.card-small {
+      @include span-columns(4);
+    }
+
+    &.card-big {
+      @include span-columns(8);
+    }
+  }
+
 }
 
 // Card module styles END

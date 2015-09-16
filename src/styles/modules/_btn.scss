@@ -5,6 +5,11 @@
   border-color: $btnColor;
   color: $btnColor;
   background-color: $btnBgColor;
+
+  &:hover, &:active {
+    color: #fff;
+    background-color: $btnColor;
+  }
 }
 
 // Btn module styles END

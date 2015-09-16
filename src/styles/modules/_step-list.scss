@@ -5,18 +5,27 @@
     @include border-radius(em(5));
 
     margin: em(10) 0;
-    padding: em(70) em(20) em(18);
-    
+    padding: em(65) em(20) em(18);
+    background-color: #847b70;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    @media screen and (min-width: $mobileWidth + 1) {
+      height: em(400);
+    }
+
     &.step-one {
-      background: url("../img/step_0.jpg") #847b70 no-repeat;
+      background-image: url("../img/step_0.jpg");
     }
 
     &.step-two {
-      background: url("../img/step_1.jpg") #847b70 no-repeat;
+      padding-top: em(99);
+      background-image: url("../img/step_1.jpg");
     }
 
     &.step-three {
-      background: url("../img/step_2.jpg") #847b70 no-repeat;
+      background-image: url("../img/step_2.jpg");
     }
   }
 
@@ -31,8 +40,9 @@
   }
   
   .step-title {
-    margin: em(20, 24) 0;
+    margin: em(17, 24) 0 em(11, 24);
     color: $stepTitleColor;
+    font-family: $baseFont;
     font-size: em(24);
     font-weight: 700;
   }
@@ -40,7 +50,8 @@
   .step-description {
     color: $stepDescriptionColor;
     font-size: em(14);
-    font-weight: 100;
+    font-family: $secondaryFont;
+    font-weight: 300;
   }
 }
 

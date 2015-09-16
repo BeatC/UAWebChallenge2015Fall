@@ -2,11 +2,16 @@
 
 .partners-list {
   .partner {
-    margin-bottom: em(25);
-    
+    margin-bottom: em(29);
+
+    @media screen and (min-width: $mobileWidth + 1) {
+      margin-top: em(6);
+    }
+
     .name {
       margin-bottom: em(12, 14);
       color: $titleTextColor;
+      font-family: $baseFont;
       font-size: em(14);
       font-weight: 700;
       text-align: center;
@@ -17,12 +22,13 @@
       color: $descriptionColor;
       font-size: em(14);
       font-weight: 300;
+      font-family: $secondaryFont;
       text-align: center;
     }
   }
 
   .partner-img {
-    margin-bottom: em(20);
+    margin-bottom: em(16);
   }
 
 

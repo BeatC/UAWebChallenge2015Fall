@@ -6,10 +6,17 @@
   padding: em(10, 14) 0;
   font-size: em(14);
   font-weight: 700;
+  font-family: $baseFont;
   text-align: center;
   border-style: solid;
 
-  @media screen and (max-width: 320px) {
+  @include transition(all, .3s, $controlBezier);
+
+  &:hover, &:active {
+    @include transition(all, .3s, $controlBezier);
+  }
+
+  @media screen and (max-width: $mobileWidth) {
     width: 100%;
   }
 }

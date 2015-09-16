@@ -2,8 +2,13 @@
 
 .search-partner {
   @extend .mobile-block;
+  @include clearfix;
 
   padding: em(27) em(20) em(40);
+
+  @media screen and (min-width: $mobileWidth + 1) {
+    padding-top: em(84);
+  }
 }
 
 // Search partner module END

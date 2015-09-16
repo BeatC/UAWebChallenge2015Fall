@@ -1,8 +1,16 @@
 // Promo module styles BEGIN
 
 .promo {
-  margin-top: em(40);
   padding: 0 em(10);
+
+  @media screen and (max-width: $mobileWidth) {
+    margin-top: em(39);
+  }
+
+  @media screen and (min-width: $mobileWidth + 1) and (max-width: $tabletWidth) {
+    margin-top: em(94);
+  }
+
 }
 
 // Promo module styles END

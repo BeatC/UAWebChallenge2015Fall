@@ -1,7 +1,11 @@
 // Partners module styles BEGIN
 
 .partners {
-  padding: 0 em(20) em(36);
+  padding: em(23) em(20) em(36);
+
+  @media screen and (min-width: $mobileWidth + 1) {
+    padding-top: em(87);
+  }
 }
 
 // Partners module styles END

@@ -3,9 +3,15 @@
 .tagline {
   color: $logoLightColor;
   font-size: em(30);
+  font-family: $baseFont;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (min-width: $mobileWidth + 1) {
+    font-size: em(50);
+  }
+
 }
 
 // Tagline module styles END

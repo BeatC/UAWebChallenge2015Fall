@@ -5,10 +5,16 @@
   margin: em(10, 14) 0;
   padding: em(10, 14) em(14, 14);
   font-size: em(14);
-  font-weight: 400;
+  font-weight: 300;
+  font-family: $secondaryFont;
   color: $inputColor;
   border: 1px solid $inputBorderColor;
   @include border-radius(em(5, 14));
+  @include transition(all, .3s, $controlBezier);
+
+  &:focus {
+    border-color: shade($inputBorderColor, 30%);
+  }
 }
 
 // Input control module styles END

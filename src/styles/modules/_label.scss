@@ -2,12 +2,13 @@
 
 .label {
   display: inline-block;
-  padding: em(6, 10) em(15, 10);
+  padding: em(4,10) em(14, 10);
   background-color: $stepLabelBgColor;
   color: $stepLabelColor;
   text-transform: uppercase;
-  font-weight: 100;
-  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: $baseFont;
+  letter-spacing: 2px;
   font-size: em(10);
 
   @include border-radius(em(40, 10));

@@ -3,19 +3,75 @@
 .l-header {
   background: url(../img/logo.jpg) #c49c70;
   @include background-size(cover);
-  padding: em(20) em(20) em(135);
+  @include clearfix;
+
+
+  @media screen and (max-width: $mobileWidth) {
+    padding: em(20) em(19) em(135);
+  }
+  
+  @media screen and (min-width: $mobileWidth + 1) {
+    padding: em(38) 0 em(232);
+  }
 
   .logo-light {
-    margin-top: em(100);
+    @media screen and (max-width: $mobileWidth) {
+      margin-top: em(116, 20);
+    }
+
+    @media screen and (min-width: $mobileWidth + 1) {
+      padding: em(8, 20) em(49, 20);
+    }
+  }
+  
+  .sign-in {
+    @media screen and (min-width: $mobileWidth + 1) {
+      float: right;
+    }
+
+    @media screen and (min-width: $mobileWidth + 1) {
+      margin-right: em(49);
+      margin-bottom: em(16, 50);
+    }
   }
 
   .tagline {
-    margin-top: em(35);
+    margin-bottom: em(8, 30);
+
+    @media screen and (max-width: $mobileWidth) {
+      margin-top: em(26, 30);
+    }
+    
+    @media screen and (min-width: $mobileWidth + 1) {
+      margin-top: em(138, 50);
+      @include shift(2);
+      @include span-columns(8);
+    }
   }
-  
+
   .tagline-description {
-    margin: em(20) auto;
+    @media screen and (max-width: $mobileWidth) {
+      width: em(225, 18);
+    }
+
+    @media screen and (min-width: $mobileWidth + 1) {
+      @include span-columns(8);
+      @include shift(2);
+      margin-top: em(12, 24);
+      margin-bottom: em(34, 24);
+    }
+
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  .btn-dark {
+    @media screen and (min-width: $mobileWidth + 1) {
+      @include span-columns(4);
+      @include shift(4);
+    }
+  }
+
 }
 
 // Layout styles for l-header END

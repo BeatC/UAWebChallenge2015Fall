@@ -2,9 +2,15 @@
 
 .tagline-description {
   color: $logoLightColor;
+  font-family: $secondaryFont;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
   font-size: em(18);
+
+  @media screen and (min-width: $mobileWidth + 1) {
+    font-size: em(24);
+    letter-spacing: 0.2px;
+  }
 }
 
 // Tagline description module styles END

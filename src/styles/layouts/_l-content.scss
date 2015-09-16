@@ -1,8 +1,72 @@
 // L-content layout styles BEGIN
 
 .l-content {
+
+
   .cards {
     margin: 0 em(10);
+  }
+
+  .search {
+    @media screen and (min-width: $mobileWidth + 1) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+
+  .step-list {
+    @include clearfix;
+
+    > li {
+      @media screen and (min-width: $mobileWidth + 1) {
+        @include span-columns(4);
+
+        &:nth-child(3) {
+          @include omega;
+        }
+      }
+    }
+  }
+
+  .partners {
+    @include clearfix;
+
+    .btn {
+      @media screen and (min-width: $mobileWidth + 1) {
+        @include span-columns(4);
+        @include shift(4);
+      }
+    }
+  }
+
+  .partners-list {
+    @media screen and (min-width: $mobileWidth + 1) {
+      @include shift(2);
+      @include span-columns(8);
+      margin-bottom: em(37);
+
+      .partner {
+        @include span-columns(6);
+
+        &:nth-child(2n) {
+          @include omega;
+        }
+      }
+    }
+  }
+
+  .cards {
+    @media screen and (min-width: $mobileWidth + 1) {
+      margin-top: em(59);
+    }
+  }
+
+  .card.idea-expeditions, .card.idea-culture, .card.idea-travelling {
+    @include omega;
+  }
+
+  @media screen and (min-width: $mobileWidth + 1) {
+    padding-bottom: em(57);
   }
 }
 

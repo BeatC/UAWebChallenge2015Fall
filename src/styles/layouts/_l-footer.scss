@@ -5,11 +5,33 @@
   padding: em(16) 0;
 
   .links {
-    margin: em(11) 0 em(2);
+    @media screen and (max-width: $mobileWidth) {
+      margin: em(11) 0 em(2);
+    }
+
+    @media screen and (min-width: $mobileWidth + 1) {
+      @include shift(1);
+      @include span-columns(2);
+      text-align: left;
+    }
+  }
+
+  .logo {
+    @media screen and (min-width: $mobileWidth + 1) {
+      @include span-columns(3);
+      text-align: right;
+    }
   }
 
   .design {
-    margin-top: em(9);
+    @media screen and (max-width: $mobileWidth) {
+      margin-top: em(9);
+    }
+
+    @media screen and (min-width: $mobileWidth + 1) {
+      @include span-columns(3);
+      @include omega;
+    }
   }
 }
 
